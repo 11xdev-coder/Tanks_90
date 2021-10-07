@@ -7,16 +7,21 @@ public class Health : MonoBehaviour
     [SerializeField]
     int actualHealth;
     int currentHealth;
+    Animator anime;
+    Rigidbody2D rb2d;
     void Start()
     {
         SetHealth();
+        anime = GetComponent<Animator>();
+        rb2d = GetComponent<Rigidbody2D>();
     }
     public void TakeDamage()
     {
         currentHealth--;
         if (currentHealth <= 0)
         {
-            Death();
+            rb2d.velocity = Vector2.zero;
+            anime.SetTrigger("killed");
         }
     }
     public void SetHealth()
