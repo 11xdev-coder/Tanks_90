@@ -2698,6 +2698,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6557510925481575177, guid: 7dfb613a54e021541924bb0fddde88bb, type: 3}
+      propertyPath: smallTank
+      value: 
+      objectReference: {fileID: 7330765103539640218, guid: 0a82aef9724d05a4d83025649f71ef45, type: 3}
     - target: {fileID: 6557510926110389328, guid: 7dfb613a54e021541924bb0fddde88bb, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -2746,6 +2750,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Stage Essential
       objectReference: {fileID: 0}
+    - target: {fileID: 6557510926399305377, guid: 7dfb613a54e021541924bb0fddde88bb, type: 3}
+      propertyPath: smallTank
+      value: 
+      objectReference: {fileID: 7330765103539640218, guid: 0a82aef9724d05a4d83025649f71ef45, type: 3}
+    - target: {fileID: 6557510926633442423, guid: 7dfb613a54e021541924bb0fddde88bb, type: 3}
+      propertyPath: smallTank
+      value: 
+      objectReference: {fileID: 7330765103539640218, guid: 0a82aef9724d05a4d83025649f71ef45, type: 3}
     - target: {fileID: 6557510926921542747, guid: 7dfb613a54e021541924bb0fddde88bb, type: 3}
       propertyPath: m_TileAssetArray.Array.data[1].m_Data
       value: 

@@ -2672,7 +2672,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  smallTank: {fileID: 8012334232424425485, guid: 0a82aef9724d05a4d83025649f71ef45, type: 3}
+  smallTank: {fileID: 7330765103539640218, guid: 0a82aef9724d05a4d83025649f71ef45, type: 3}
   fastTank: {fileID: 3798423261088840877, guid: e47166b4efe232a44b30511c69c5346a, type: 3}
   bigTank: {fileID: 8916115586727756747, guid: 8675ebb8233f38642b212ffa0b3b5423, type: 3}
   armoredTank: {fileID: 7913957957896060800, guid: c6aa52bad21aec64fa776c4da940702b, type: 3}
@@ -10921,7 +10921,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  smallTank: {fileID: 8012334232424425485, guid: 0a82aef9724d05a4d83025649f71ef45, type: 3}
+  smallTank: {fileID: 7330765103539640218, guid: 0a82aef9724d05a4d83025649f71ef45, type: 3}
   fastTank: {fileID: 3798423261088840877, guid: e47166b4efe232a44b30511c69c5346a, type: 3}
   bigTank: {fileID: 8916115586727756747, guid: 8675ebb8233f38642b212ffa0b3b5423, type: 3}
   armoredTank: {fileID: 7913957957896060800, guid: c6aa52bad21aec64fa776c4da940702b, type: 3}
@@ -11751,7 +11751,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isPlayer: 0
-  smallTank: {fileID: 8012334232424425485, guid: 0a82aef9724d05a4d83025649f71ef45, type: 3}
+  smallTank: {fileID: 7330765103539640218, guid: 0a82aef9724d05a4d83025649f71ef45, type: 3}
   fastTank: {fileID: 3798423261088840877, guid: e47166b4efe232a44b30511c69c5346a, type: 3}
   bigTank: {fileID: 8916115586727756747, guid: 8675ebb8233f38642b212ffa0b3b5423, type: 3}
   armoredTank: {fileID: 7913957957896060800, guid: c6aa52bad21aec64fa776c4da940702b, type: 3}
