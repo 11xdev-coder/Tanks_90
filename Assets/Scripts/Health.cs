@@ -20,8 +20,9 @@ public class Health : MonoBehaviour
         currentHealth--;
         if (currentHealth <= 0)
         {
-            rb2d.velocity = Vector2.zero;
-            anime.SetTrigger("killed");
+            //rb2d.velocity = Vector2.zero;
+            //anime.SetTrigger("killed");
+            Death();
         }
     }
     public void SetHealth()
