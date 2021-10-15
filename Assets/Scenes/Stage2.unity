@@ -170,7 +170,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3721501071106710068, guid: e7066b82ecc41954aae46552953a7bea, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3721501071106710068, guid: e7066b82ecc41954aae46552953a7bea, type: 3}
       propertyPath: m_LocalPosition.x
@@ -287,6 +287,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1784535637486449906, guid: 541bcd1261ab03043bad9d94dbf4697d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2423443830517918770, guid: 541bcd1261ab03043bad9d94dbf4697d, type: 3}
       propertyPath: actualHealth
       value: 3
@@ -551,6 +555,11 @@ Sprite:
   m_PhysicsShape: []
   m_Bones: []
   m_SpriteID: 
+--- !u!224 &2138988994 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 8027965714658375920, guid: e0cc8e3732625a945b947b6f1f34978b, type: 3}
+  m_PrefabInstance: {fileID: 3059482069616876241}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &3059482069616876241
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -558,6 +567,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4353239535762922065, guid: e0cc8e3732625a945b947b6f1f34978b, type: 3}
+      propertyPath: tankReservePanel
+      value: 
+      objectReference: {fileID: 2138988994}
     - target: {fileID: 4353239535762922068, guid: e0cc8e3732625a945b947b6f1f34978b, type: 3}
       propertyPath: m_IsActive
       value: 1

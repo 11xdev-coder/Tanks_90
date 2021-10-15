@@ -7,6 +7,11 @@ using UnityEngine.SceneManagement;
 public class GamePlayManager : MonoBehaviour
 {
     [SerializeField]
+    Transform tankReservePanel;
+    [SerializeField]
+    Text playerLivesText, stageNumber;
+    GameObject tankImage;
+    [SerializeField]
     Image topCurtain, bottomCurtain, blackCurtain;
     [SerializeField]
     Text stageNumberText, gameOverText;
@@ -20,6 +25,9 @@ public class GamePlayManager : MonoBehaviour
         StartCoroutine(StartStage());
         spawnPoints = GameObject.FindGameObjectsWithTag("EnemySpawnPoint");
         spawnPlayerPoints = GameObject.FindGameObjectsWithTag("PlayerSpawnPoint");
+        UpdateTankReserve();
+        UpdatePlayerLives();
+        UpdateStageNumber();
     }
 
     private void Update()
@@ -29,6 +37,34 @@ public class GamePlayManager : MonoBehaviour
             MasterTracker.stageCleared = true;
             LevelCompleted();
         }
+    }
+
+    void UpdateTankReserve()
+    {
+        int j;
+        int numberOfTanks = LevelManager.smallTanks + LevelManager.fastTanks + LevelManager.bigTanks + LevelManager.armoredTanks;
+        for(j = 0; j < numberOfTanks; j++)
+        {
+            tankImage = tankReservePanel.transform.GetChild(j).gameObject;
+            tankImage.SetActive(true);
+        }
+    }
+
+    public void RemoveTankReserve()
+    {
+        int numberOfTanks = LevelManager.smallTanks + LevelManager.fastTanks + LevelManager.bigTanks + LevelManager.armoredTanks;
+        tankImage = tankReservePanel.transform.GetChild(numberOfTanks).gameObject;
+        tankImage.SetActive(false);
+    }
+
+    public void UpdatePlayerLives()
+    {
+        playerLivesText.text = MasterTracker.playerLives.ToString();
+    }
+
+    public void UpdateStageNumber()
+    {
+        stageNumber.text = MasterTracker.stageNumber.ToString();
     }
 
     private void LevelCompleted()
