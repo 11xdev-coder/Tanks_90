@@ -2150,6 +2150,7 @@ MonoBehaviour:
   blackCurtain: {fileID: 4431314536376663102}
   stageNumberText: {fileID: 7879618990157245751}
   gameOverText: {fileID: 1438085152744097121}
+  _health: {fileID: 1784535637486449897, guid: 541bcd1261ab03043bad9d94dbf4697d, type: 3}
 --- !u!114 &8709029505559542827
 MonoBehaviour:
   m_ObjectHideFlags: 0

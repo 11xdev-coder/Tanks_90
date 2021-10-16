@@ -18,6 +18,7 @@ public class GamePlayManager : MonoBehaviour
     GameObject[] spawnPoints, spawnPlayerPoints;
     bool stageStart = false;
     bool tankReverseEmpty = false;
+    public Health _health;
     // Use this for initialization
     void Start()
     {
@@ -37,6 +38,7 @@ public class GamePlayManager : MonoBehaviour
             MasterTracker.stageCleared = true;
             LevelCompleted();
         }
+        UpdatePlayerLives();
     }
 
     void UpdateTankReserve()
@@ -59,7 +61,7 @@ public class GamePlayManager : MonoBehaviour
 
     public void UpdatePlayerLives()
     {
-        playerLivesText.text = MasterTracker.playerLives.ToString();
+        playerLivesText.text = _health.currentHealth.ToString();
     }
 
     public void UpdateStageNumber()

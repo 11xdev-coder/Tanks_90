@@ -5,8 +5,8 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField]
-    int actualHealth;
-    int currentHealth;
+    public int actualHealth;
+    public int currentHealth;
     Animator anime;
     Rigidbody2D rb2d;
     void Start()
@@ -18,7 +18,7 @@ public class Health : MonoBehaviour
     public void TakeDamage()
     {
         currentHealth--;
-        if (currentHealth <= 0)
+        if (currentHealth <= 1)
         {
             //rb2d.velocity = Vector2.zero;
             //anime.SetTrigger("killed");

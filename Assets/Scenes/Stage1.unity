@@ -157,6 +157,17 @@ MonoBehaviour:
   m_InstancedGameObject: {fileID: 0}
   m_Flags: 3
   m_ColliderType: 1
+--- !u!114 &622741482 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1784535637486449897, guid: 541bcd1261ab03043bad9d94dbf4697d, type: 3}
+  m_PrefabInstance: {fileID: 1784535637531835846}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af6a145421ba3334d9c0197ce10ad9ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!213 &775466981
 Sprite:
   m_ObjectHideFlags: 0
@@ -632,9 +643,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 83860183}
     - target: {fileID: 7186749402038566880, guid: 30676525a0d1c5848848a1279c5d5b93, type: 3}
+      propertyPath: _health
+      value: 
+      objectReference: {fileID: 622741482}
+    - target: {fileID: 7186749402038566880, guid: 30676525a0d1c5848848a1279c5d5b93, type: 3}
       propertyPath: playerTank
       value: 
       objectReference: {fileID: 1784535637531835847}
+    - target: {fileID: 7186749402038566880, guid: 30676525a0d1c5848848a1279c5d5b93, type: 3}
+      propertyPath: currentHealth
+      value: 
+      objectReference: {fileID: 622741482}
     - target: {fileID: 8708582091649140410, guid: 30676525a0d1c5848848a1279c5d5b93, type: 3}
       propertyPath: m_Name
       value: Stage Essential
