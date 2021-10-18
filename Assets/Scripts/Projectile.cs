@@ -9,7 +9,7 @@ public class Projectile : MonoBehaviour
     bool toBeDestroyed = false;
     GameObject brickGameObject, steelGameObject;
     Tilemap tilemap;
-    public int speed = 1;
+    public int speed = 5;
     Rigidbody2D rb2d;
     void Start()
     {

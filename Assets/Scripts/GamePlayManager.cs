@@ -2,10 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Tilemaps;
 using UnityEngine.SceneManagement;
 
 public class GamePlayManager : MonoBehaviour
 {
+    Tilemap waterTilemap, steelTilemap;
     [SerializeField]
     Transform tankReservePanel;
     [SerializeField]
@@ -15,6 +17,8 @@ public class GamePlayManager : MonoBehaviour
     Image topCurtain, bottomCurtain, blackCurtain;
     [SerializeField]
     Text stageNumberText, gameOverText;
+    [SerializeField]
+    GameObject[] bonusCrates;
     GameObject[] spawnPoints, spawnPlayerPoints;
     bool stageStart = false;
     bool tankReverseEmpty = false;
@@ -22,6 +26,8 @@ public class GamePlayManager : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        steelTilemap = GameObject.Find("Steel").GetComponent<Tilemap>();
+        waterTilemap = GameObject.Find("Water").GetComponent<Tilemap>();
         stageStart = true;
         StartCoroutine(StartStage());
         spawnPoints = GameObject.FindGameObjectsWithTag("EnemySpawnPoint");
@@ -49,6 +55,32 @@ public class GamePlayManager : MonoBehaviour
         {
             tankImage = tankReservePanel.transform.GetChild(j).gameObject;
             tankImage.SetActive(true);
+        }
+    }
+
+    bool InvalidBonusCratePosition(Vector3 cratePosition)
+    {
+        return waterTilemap.GetTile(waterTilemap.WorldToCell(cratePosition)) != null || steelTilemap.GetTile(steelTilemap.WorldToCell(cratePosition)) != null;
+    }
+
+    public void GenerateBonusCrate()
+    {
+        GameObject bonusCrate = bonusCrates[Random.Range(0, bonusCrates.Length)];
+        Vector3 cratePosition = new Vector3(Random.Range(-12, 12), Random.Range(-12, 13), 0);
+        if (InvalidBonusCratePosition(cratePosition))
+        {
+            do
+            {
+                cratePosition = new Vector3(Random.Range(-12, 12), Random.Range(-12, 13), 0);
+                if (!InvalidBonusCratePosition(cratePosition))
+                {
+                    Instantiate(bonusCrate, cratePosition, Quaternion.identity);
+                }
+            } while (InvalidBonusCratePosition(cratePosition));
+        }
+        else
+        {
+            Instantiate(bonusCrate, cratePosition, Quaternion.identity);
         }
     }
 

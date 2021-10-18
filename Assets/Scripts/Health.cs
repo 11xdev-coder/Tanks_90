@@ -35,17 +35,18 @@ public class Health : MonoBehaviour
     }
     void Death()
     {
-        GamePlayManager GPM = GameObject.Find("Canvas").GetComponent<GamePlayManager>(); 
+        GamePlayManager GPM = GameObject.Find("Canvas").GetComponent<GamePlayManager>();
         if (gameObject.CompareTag("Player"))
         {
-            GPM.SpawnPlayer(); //Spawn Player
+            GPM.SpawnPlayer();
         }
         else
         {
-            if (gameObject.CompareTag("Small")) MasterTracker.smallTankDestroyed++;
-            else if (gameObject.CompareTag("Fast")) MasterTracker.fastTankDestroyed++;
-            else if (gameObject.CompareTag("Big")) MasterTracker.bigTankDestroyed++;
-            else if (gameObject.CompareTag("Armored")) MasterTracker.armoredTankDestroyed++;
+            if (gameObject.CompareTag("Small")) MasterTracker.smallTanksDestroyed++;
+            else if (gameObject.CompareTag("Fast")) MasterTracker.fastTanksDestroyed++;
+            else if (gameObject.CompareTag("Big")) MasterTracker.bigTanksDestroyed++;
+            else if (gameObject.CompareTag("Armored")) MasterTracker.armoredTanksDestroyed++;
+            if (gameObject.GetComponent<BonusTank>().IsBonusTankCheck()) GPM.GenerateBonusCrate();
         }
         Destroy(gameObject);
     }

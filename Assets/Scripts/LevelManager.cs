@@ -8,8 +8,9 @@ public class LevelManager : MonoBehaviour
     int smallTanksInThisLevel, fastTanksInThisLevel, bigTanksInThisLevel, armoredTanksInThisLevel, stageNumber;
     public static int smallTanks, fastTanks, bigTanks, armoredTanks;
     [SerializeField]
-    float spawnRateInThisLevel = 5;       //newly added
-    public static float spawnRate { get; private set; } //newly added
+    float spawnRateInThisLevel = 5, bonusCrateRateInThisLevel = 0.2f;
+    public static float spawnRate { get; private set; }
+    public static float bonusCrateRate { get; private set; }
     private void Awake()
     {
         MasterTracker.stageNumber = stageNumber;
@@ -17,6 +18,7 @@ public class LevelManager : MonoBehaviour
         fastTanks = fastTanksInThisLevel;
         bigTanks = bigTanksInThisLevel;
         armoredTanks = armoredTanksInThisLevel;
-        spawnRate = spawnRateInThisLevel; //newly added
+        spawnRate = spawnRateInThisLevel;
+        bonusCrateRate = bonusCrateRateInThisLevel;
     }
 }

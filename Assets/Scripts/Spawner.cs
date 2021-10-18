@@ -37,6 +37,10 @@ public class Spawner : MonoBehaviour
             if (LevelManager.armoredTanks > 0) tankToSpawn.Add((int)tankType.armoredTank);
             int tankID = tankToSpawn[Random.Range(0, tankToSpawn.Count)];
             tank = Instantiate(tanks[tankID], transform.position, transform.rotation);
+            if(Random.value <= LevelManager.bonusCrateRate)
+            {
+                tank.GetComponent<BonusTank>().MakeBonusTank();
+            }
             tank.SetActive(false);
             if (tankID == (int)tankType.smallTank) LevelManager.smallTanks--;
             else if (tankID == (int)tankType.fastTank) LevelManager.fastTanks--;

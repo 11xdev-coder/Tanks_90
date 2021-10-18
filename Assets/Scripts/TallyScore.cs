@@ -25,35 +25,35 @@ public class TallyScore : MonoBehaviour
     }
     IEnumerator UpdateTankPoints()
     {
-        for (int i = 0; i <= MasterTracker.smallTankDestroyed; i++)
+        for (int i = 0; i <= MasterTracker.smallTanksDestroyed; i++)
         {
             smallTankScore = smallTankPointsWorth * i;
             smallTankScoreText.text = smallTankScore.ToString();
             smallTanksDestroyed.text = i.ToString();
             yield return new WaitForSeconds(0.2f);
         }
-        for (int i = 0; i <= MasterTracker.fastTankDestroyed; i++)
+        for (int i = 0; i <= MasterTracker.fastTanksDestroyed; i++)
         {
             fastTankScore = fastTankPointsWorth * i;
             fastTankScoreText.text = fastTankScore.ToString();
             fastTanksDestroyed.text = i.ToString();
             yield return new WaitForSeconds(0.2f);
         }
-        for (int i = 0; i <= MasterTracker.bigTankDestroyed; i++)
+        for (int i = 0; i <= MasterTracker.bigTanksDestroyed; i++)
         {
             bigTankScore = bigTankPointsWorth * i;
             bigTankScoreText.text = bigTankScore.ToString();
             bigTanksDestroyed.text = i.ToString();
             yield return new WaitForSeconds(0.2f);
         }
-        for (int i = 0; i <= MasterTracker.armoredTankDestroyed; i++)
+        for (int i = 0; i <= MasterTracker.armoredTanksDestroyed; i++)
         {
             armoredTankScore = armoredTankPointsWorth * i;
             armoredTankScoreText.text = armoredTankScore.ToString();
             armoredTanksDestroyed.text = i.ToString();
             yield return new WaitForSeconds(0.2f);
         }
-        totalTanksDestroyed.text = (MasterTracker.smallTankDestroyed + MasterTracker.fastTankDestroyed + MasterTracker.bigTankDestroyed + MasterTracker.armoredTankDestroyed).ToString();
+        totalTanksDestroyed.text = (MasterTracker.smallTanksDestroyed + MasterTracker.fastTanksDestroyed + MasterTracker.bigTanksDestroyed + MasterTracker.armoredTanksDestroyed).ToString();
         MasterTracker.playerScore += (smallTankScore + fastTankScore + bigTankScore + armoredTankScore);
         yield return new WaitForSeconds(5f);
         if (MasterTracker.stageCleared)
@@ -69,10 +69,10 @@ public class TallyScore : MonoBehaviour
     }
     void ClearStatistics()
     {
-        MasterTracker.smallTankDestroyed = 0;
-        MasterTracker.fastTankDestroyed = 0;
-        MasterTracker.bigTankDestroyed = 0;
-        MasterTracker.armoredTankDestroyed = 0;
+        MasterTracker.smallTanksDestroyed = 0;
+        MasterTracker.fastTanksDestroyed = 0;
+        MasterTracker.bigTanksDestroyed = 0;
+        MasterTracker.armoredTanksDestroyed = 0;
         MasterTracker.stageCleared = false;
     }
 }
