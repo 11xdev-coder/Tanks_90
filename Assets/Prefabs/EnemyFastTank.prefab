@@ -375,6 +375,7 @@ GameObject:
   - component: {fileID: 3798423261088840879}
   - component: {fileID: 3798423261088840878}
   - component: {fileID: 2409730834954206439}
+  - component: {fileID: 2409625086182686851}
   m_Layer: 11
   m_Name: EnemyFastTank
   m_TagString: Fast
@@ -497,6 +498,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actualHealth: 1
   currentHealth: 0
+--- !u!114 &2409625086182686851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3798423261088840877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f2c2b40ccaa80544ab0d959a389fc387, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &3798423261095220891
 GameObject:
   m_ObjectHideFlags: 0

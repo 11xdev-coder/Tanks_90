@@ -465,6 +465,10 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 279782208}
+    - target: {fileID: 6351268582506356512, guid: bce95c75629707b42a4b5e690467c7cb, type: 3}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6351268582797687514, guid: bce95c75629707b42a4b5e690467c7cb, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -513,9 +517,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: ScoreScene
       objectReference: {fileID: 0}
+    - target: {fileID: 6351268582822643243, guid: bce95c75629707b42a4b5e690467c7cb, type: 3}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351268582978166584, guid: bce95c75629707b42a4b5e690467c7cb, type: 3}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351268583047028074, guid: bce95c75629707b42a4b5e690467c7cb, type: 3}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351268583247469263, guid: bce95c75629707b42a4b5e690467c7cb, type: 3}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351268583406361144, guid: bce95c75629707b42a4b5e690467c7cb, type: 3}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351268583857615236, guid: bce95c75629707b42a4b5e690467c7cb, type: 3}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351268583950211156, guid: bce95c75629707b42a4b5e690467c7cb, type: 3}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6351268584205701994, guid: bce95c75629707b42a4b5e690467c7cb, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 36
+      objectReference: {fileID: 0}
+    - target: {fileID: 6351268584252562067, guid: bce95c75629707b42a4b5e690467c7cb, type: 3}
+      propertyPath: m_Text
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bce95c75629707b42a4b5e690467c7cb, type: 3}
