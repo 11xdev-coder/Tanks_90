@@ -674,5 +674,9 @@ PrefabInstance:
       propertyPath: spawnRateInThisLevel
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 8709029505559542827, guid: 30676525a0d1c5848848a1279c5d5b93, type: 3}
+      propertyPath: bonusCrateRateInThisLevel
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30676525a0d1c5848848a1279c5d5b93, type: 3}

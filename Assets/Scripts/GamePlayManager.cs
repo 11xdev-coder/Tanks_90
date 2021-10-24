@@ -44,7 +44,6 @@ public class GamePlayManager : MonoBehaviour
             MasterTracker.stageCleared = true;
             LevelCompleted();
         }
-        UpdatePlayerLives();
     }
 
     void UpdateTankReserve()
@@ -93,7 +92,7 @@ public class GamePlayManager : MonoBehaviour
 
     public void UpdatePlayerLives()
     {
-        playerLivesText.text = _health.currentHealth.ToString();
+        playerLivesText.text = Health.currentHealth.ToString();
     }
 
     public void UpdateStageNumber()

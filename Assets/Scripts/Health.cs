@@ -6,7 +6,7 @@ public class Health : MonoBehaviour
 {
     [SerializeField]
     public int actualHealth;
-    public int currentHealth;
+    public static int currentHealth = 3;
     Animator anime;
     Rigidbody2D rb2d;
     void Start()
