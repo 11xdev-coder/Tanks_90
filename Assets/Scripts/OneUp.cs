@@ -11,8 +11,8 @@ public class OneUp : PowerUps
     }
     public void OnTriggerEnter2D(Collider2D collision)
     {
-        Health.currentHealth++;
-        print(Health.currentHealth);
+        _health.currentHealth++;
+        print(_health.currentHealth);
         GamePlayManager GPM = GameObject.Find("Canvas").GetComponent<GamePlayManager>();
         GPM.UpdatePlayerLives();
         Destroy(this.gameObject);

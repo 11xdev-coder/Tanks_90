@@ -11,7 +11,7 @@ public class GamePlayManager : MonoBehaviour
     [SerializeField]
     Transform tankReservePanel;
     [SerializeField]
-    Text playerLivesText, stageNumber;
+    public Text playerLivesText, playerInvincibleText, stageNumber;
     GameObject tankImage;
     [SerializeField]
     Image topCurtain, bottomCurtain, blackCurtain;
@@ -44,6 +44,7 @@ public class GamePlayManager : MonoBehaviour
             MasterTracker.stageCleared = true;
             LevelCompleted();
         }
+        UpdatePlayerLives();
     }
 
     void UpdateTankReserve()
@@ -92,7 +93,7 @@ public class GamePlayManager : MonoBehaviour
 
     public void UpdatePlayerLives()
     {
-        playerLivesText.text = Health.currentHealth.ToString();
+        playerLivesText.text = _health.currentHealth.ToString();
     }
 
     public void UpdateStageNumber()

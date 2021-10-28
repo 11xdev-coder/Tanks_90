@@ -295,6 +295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actualHealth: 3
+  currentHealth: 0
 --- !u!1 &1784535637491440766
 GameObject:
   m_ObjectHideFlags: 0
