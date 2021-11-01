@@ -23,6 +23,7 @@ public class GamePlayManager : MonoBehaviour
     bool stageStart = false;
     bool tankReverseEmpty = false;
     public Health _health;
+    public GameObject playerTank;
     // Use this for initialization
     void Start()
     {
@@ -93,7 +94,7 @@ public class GamePlayManager : MonoBehaviour
 
     public void UpdatePlayerLives()
     {
-        playerLivesText.text = _health.currentHealth.ToString();
+        playerLivesText.text = playerTank.GetComponent<Health>().currentHealth.ToString();
     }
 
     public void UpdateStageNumber()

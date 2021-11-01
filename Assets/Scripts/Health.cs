@@ -15,6 +15,10 @@ public class Health : MonoBehaviour
         anime = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
     }
+    public void SetHealth()
+    {
+        currentHealth = actualHealth;
+    }
     public void TakeDamage()
     {
         currentHealth--;
@@ -24,10 +28,6 @@ public class Health : MonoBehaviour
             //anime.SetTrigger("killed");
             Death();
         }
-    }
-    public void SetHealth()
-    {
-        currentHealth = actualHealth;
     }
     public void SetInvincible()
     {
